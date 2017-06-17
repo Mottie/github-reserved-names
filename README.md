@@ -1,8 +1,11 @@
-# GitHub-reserved-names
+# GitHub-reserved-names [![NPM Version][npm-image]][npm-url]
+
+[npm-url]: https://npmjs.org/package/github-reserved-names
+[npm-image]: https://img.shields.io/npm/v/github-reserved-names.svg
 
 > Get a list, or check if a user or organization name is reserved by GitHub
 
-This is by no means a complete list of reserved GitHub user/organization names.
+This is *by no means a complete list* of reserved GitHub user/organization names.
 
 The list in this repository was gathered from several sources:
 
