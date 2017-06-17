@@ -34,6 +34,20 @@ isReserved.all;
 // [ 400, 401, 402, ..., "trending", "watching" ]
 ```
 
+## API
+
+### .all
+
+Type: `array`
+
+Current list of gathered GitHub reserved names.
+
+### .check()
+
+Type: `function`
+
+Returns a boolean of `true` if the name is in the reserved list, `false` is not.
+
 ## CLI
 
 ```bash
