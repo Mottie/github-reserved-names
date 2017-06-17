@@ -34,6 +34,28 @@ isReserved.all;
 // [ 400, 401, 402, ..., "trending", "watching" ]
 ```
 
+## CLI
+
+```bash
+$ npm install --global github-reserved-names
+```
+
+```bash
+$ github-reserved --help
+
+  Examples
+    $ github-reserved issues
+    true
+
+    $ github-reserved --all
+    400
+    401
+    ...
+
+  Options
+    --all   Show all reserved names
+```
+
 ## License
 
 MIT
