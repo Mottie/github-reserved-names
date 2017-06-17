@@ -1,0 +1,48 @@
+{
+  "name": "github-reserved-names",
+  "version": "1.0.0",
+  "description": "Get a list, or check if a user or organization name is reserved by GitHub",
+  "license": "MIT",
+  "repository": "Mottie/github-reserved-names",
+  "author": {
+    "name": "Rob Garrison",
+    "email": "wowmotty@gmail.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "bin": {
+    "github-reserved": "cli.js"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "reserved-names.json"
+  ],
+  "keywords": [
+    "github",
+    "reserved",
+    "username",
+    "organization",
+    "cli"
+  ],
+  "xo": {
+    "space": false,
+    "rules": {
+      "quotes": [
+        "error",
+        "double"
+      ]
+    }
+  },
+  "dependencies": {
+    "meow": "^3.6.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "^0.16.0"
+  }
+}
