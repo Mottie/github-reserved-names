@@ -3,5 +3,6 @@ const reservedNames = require("./reserved-names.json");
 
 exports.all = reservedNames;
 exports.check = name => {
-	return reservedNames.includes(name || "");
+	name = (name || "").toString().toLowerCase();
+	return reservedNames.includes(name);
 };
