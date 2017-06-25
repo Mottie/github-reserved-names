@@ -77,3 +77,7 @@ $ github-reserved --help
 ## License
 
 MIT
+
+## Oddballs
+
+There are a few names that have been added or omitted because of their behavior, these are listed in the [oddballs](./oddballs.md) file.
