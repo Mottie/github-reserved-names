@@ -13,14 +13,14 @@ These names have **not** been included in the `reserved-names.json` file because
 
 ## Not reserved, but page redirects
 
-This entry does not show as a *reserved* name, but it has been  listed in the `reserved-names.json` file because it does not appear as a typical user/organization page.
+This entry **is not** labeled as a *reserved* name, but it has been listed in the `reserved-names.json` file because it does not appear as a typical user/organization page.
 
 * https://github.com/watching
 
 ## Misc
 
-This entry does not show as a *reserved* name and *it is* listed in the `reserved-names.json` file.
+This entry **is labeled** as a *reserved* name, and it *is listed* in the `reserved-names.json` file.
 
-It is listed here because it is unique, and alive?!
+It is shown here because it is unique, and alive?!
 
 * https://github.com/status (GitHub lives!)
