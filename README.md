@@ -17,6 +17,10 @@ The list in this repository was gathered from several sources:
 
 See the [history page](./history.md) for more details and how you can help expand this list.
 
+## Oddballs
+
+There are a few names that have been added or omitted because of their behavior, these are listed in the [oddballs](./oddballs.md) file.
+
 ## Install
 
 ```
@@ -77,7 +81,3 @@ $ github-reserved --help
 ## License
 
 MIT
-
-## Oddballs
-
-There are a few names that have been added or omitted because of their behavior, these are listed in the [oddballs](./oddballs.md) file.
