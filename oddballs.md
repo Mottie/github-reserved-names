@@ -17,26 +17,28 @@ These names are labeled as *reserved* but you *should not* see them in the addre
 
 These names *have been* included in the `reserved-names.json` file.
 
-* https://github.com/account &rarr; https://github.com/settings/profile
-* https://github.com/apps &rarr; https://github.com/marketplace
-* https://github.com/developer &rarr; https://developer.github.com/
-* https://github.com/edu &rarr; https://education.github.com/
-* https://github.com/help &rarr; https://help.github.com/
-* https://github.com/mac &rarr; https://desktop.github.com/
-* https://github.com/mirrors &rarr; https://help.github.com/articles/about-github-mirrors/
-* https://github.com/pages &rarr; https://pages.github.com/
-* https://github.com/plans &rarr; https://github.com/pricing
-* https://github.com/press &rarr; https://github.com/about/press
-* https://github.com/readme &rarr; https://github.com/about
-* https://github.com/repositories &rarr; https://github.com/trending
-* https://github.com/security &rarr; https://help.github.com/articles/github-security/
-* https://github.com/settings &rarr; https://github.com/settings/profile
-* https://github.com/signup &rarr; https://github.com/join
-* https://github.com/terms &rarr; https://help.github.com/articles/github-terms-of-service/
-* https://github.com/tos &rarr; https://help.github.com/articles/github-terms-of-service/
-* https://github.com/users &rarr; https://github.com/
-* https://github.com/wiki &rarr; https://github.com/
-* https://github.com/windows &rarr; https://desktop.github.com/
+| Name | Redirect |
+|------|----------|
+| https://github.com/account | https://github.com/settings/profile |
+| https://github.com/apps | https://github.com/marketplace |
+| https://github.com/developer | https://developer.github.com/ |
+| https://github.com/edu | https://education.github.com/ |
+| https://github.com/help | https://help.github.com/ |
+| https://github.com/mac | https://desktop.github.com/ |
+| https://github.com/mirrors | https://help.github.com/articles/about-github-mirrors/ |
+| https://github.com/pages | https://pages.github.com/ |
+| https://github.com/plans | https://github.com/pricing |
+| https://github.com/press | https://github.com/about/press |
+| https://github.com/readme | https://github.com/about |
+| https://github.com/repositories | https://github.com/trending |
+| https://github.com/security | https://help.github.com/articles/github-security/ |
+| https://github.com/settings | https://github.com/settings/profile |
+| https://github.com/signup | https://github.com/join |
+| https://github.com/terms | https://help.github.com/articles/github-terms-of-service/ |
+| https://github.com/tos | https://help.github.com/articles/github-terms-of-service/ |
+| https://github.com/users | https://github.com/ |
+| https://github.com/wiki | https://github.com/ |
+| https://github.com/windows | https://desktop.github.com/ |
 
 ## Not reserved, but page redirects
 
