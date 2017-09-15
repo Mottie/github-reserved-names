@@ -39,7 +39,7 @@ isReserved.check("google");
 //=> false
 
 isReserved.all;
-// [ 400, 401, 402, ..., "trending", "watching" ]
+// [ 400, 401, 402, ..., "www8", "www9" ]
 ```
 
 ## API
@@ -54,7 +54,7 @@ Current list of gathered GitHub reserved names.
 
 Type: `function`
 
-Returns a boolean of `true` if the name is in the reserved list, `false` is not.
+Returns a boolean of `true` if the name is in the reserved list, `false` if not.
 
 ## CLI
 
