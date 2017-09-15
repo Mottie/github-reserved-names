@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 "use strict";
 const meow = require("meow");
-let reservedNames = require("./");
+const reservedNames = require("./");
 
-var cli = meow([
+const cli = meow([
 	`Examples
   $ github-reserved issues
   true
