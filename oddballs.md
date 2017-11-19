@@ -53,3 +53,9 @@ This entry **is labeled** as a *reserved* name, and it *is listed* in the `reser
 It is shown here because it is unique, and alive?!
 
 * https://github.com/status (GitHub lives!)
+
+## Private Feed
+
+Clicking on the "subscript to your news feed" at the bottom of the main https://github.com page takes you to news feed page with a url similar to this: `https://github.com/{user}.private.atom?token=Base_16_encoded_value==`.
+
+This list doesn't account for these pages as the "Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen".

@@ -42,6 +42,8 @@ isReserved.all;
 // [ 400, 401, 402, ..., "www8", "www9" ]
 ```
 
+*NOTE* Also make sure to check that the username doesn't include invalid alphanumeric characters; such is the case for the url of a [private feed](./oddballs.md#private-feed).
+
 ## API
 
 ### .all
