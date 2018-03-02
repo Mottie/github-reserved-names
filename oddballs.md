@@ -21,6 +21,7 @@ These names *have been* included in the `reserved-names.json` file.
 |------|----------|
 | https://github.com/account | https://github.com/settings/profile |
 | https://github.com/apps | https://github.com/marketplace |
+| https://github.com/blog | https://blog.github.com/ |
 | https://github.com/developer | https://developer.github.com/ |
 | https://github.com/edu | https://education.github.com/ |
 | https://github.com/help | https://help.github.com/ |
