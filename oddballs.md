@@ -22,9 +22,11 @@ These names *have been* included in the `reserved-names.json` file.
 | https://github.com/account | https://github.com/settings/profile |
 | https://github.com/apps | https://github.com/marketplace |
 | https://github.com/blog | https://blog.github.com/ |
+| https://github.com/customer | https://github.com/business/customers |
 | https://github.com/developer | https://developer.github.com/ |
 | https://github.com/edu | https://education.github.com/ |
 | https://github.com/help | https://help.github.com/ |
+| https://github.com/launch | https://github.com/search |
 | https://github.com/mac | https://desktop.github.com/ |
 | https://github.com/mirrors | https://help.github.com/articles/about-github-mirrors/ |
 | https://github.com/pages | https://pages.github.com/ |
@@ -36,7 +38,9 @@ These names *have been* included in the `reserved-names.json` file.
 | https://github.com/settings | https://github.com/settings/profile |
 | https://github.com/signup | https://github.com/join |
 | https://github.com/terms | https://help.github.com/articles/github-terms-of-service/ |
+| https://github.com/topic | https://github.com/topics |
 | https://github.com/tos | https://help.github.com/articles/github-terms-of-service/ |
+| https://github.com/training | https://services.github.com/ |
 | https://github.com/users | https://github.com/ |
 | https://github.com/wiki | https://github.com/ |
 | https://github.com/windows | https://desktop.github.com/ |
