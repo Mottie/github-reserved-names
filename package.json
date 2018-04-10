@@ -1,6 +1,6 @@
 {
   "name": "github-reserved-names",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Get a list, or check if a user or organization name is reserved by GitHub",
   "license": "MIT",
   "repository": "Mottie/github-reserved-names",
