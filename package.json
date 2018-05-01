@@ -39,7 +39,7 @@
     }
   },
   "dependencies": {
-    "meow": "^4.0.0"
+    "meow": "^5.0.0"
   },
   "devDependencies": {
     "ava": "*",
