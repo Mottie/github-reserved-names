@@ -4,10 +4,18 @@ These names are labeled as both *reserved and existing* (by the [new organizatio
 
 These names have **not** been included in the `reserved-names.json` file because the pages appear as a typical user/organization page.
 
+* https://github.com/assets
 * https://github.com/bookmarks
+* https://github.com/checks
+* https://github.com/conversations
+* https://github.com/labels
 * https://github.com/media
+* https://github.com/nodes
 * https://github.com/owners
 * https://github.com/page
+* https://github.com/registry
+* https://github.com/seats
+* https://github.com/shared
 * https://github.com/tasks
 * https://github.com/uploads
 
@@ -22,9 +30,12 @@ These names *have been* included in the `reserved-names.json` file.
 | https://github.com/account | https://github.com/settings/profile |
 | https://github.com/apps | https://github.com/marketplace |
 | https://github.com/blog | https://blog.github.com/ |
+| https://github.com/contributing | https://github.com/about/careers |
 | https://github.com/customer | https://github.com/business/customers |
+| https://github.com/customers | https://github.com/business/customers |
 | https://github.com/developer | https://developer.github.com/ |
 | https://github.com/edu | https://education.github.com/ |
+| https://github.com/guides | https://help.github.com/ |
 | https://github.com/help | https://help.github.com/ |
 | https://github.com/launch | https://github.com/search |
 | https://github.com/mac | https://desktop.github.com/ |
@@ -34,6 +45,7 @@ These names *have been* included in the `reserved-names.json` file.
 | https://github.com/press | https://github.com/about/press |
 | https://github.com/readme | https://github.com/about |
 | https://github.com/repositories | https://github.com/trending |
+| https://github.com/resources | https://resources.github.com/ |
 | https://github.com/security | https://help.github.com/articles/github-security/ |
 | https://github.com/settings | https://github.com/settings/profile |
 | https://github.com/signup | https://github.com/join |
