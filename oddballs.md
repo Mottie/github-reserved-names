@@ -4,6 +4,7 @@ These names are labeled as both *reserved and existing* (by the [new organizatio
 
 These names have **not** been included in the `reserved-names.json` file because the pages appear as a typical user/organization page.
 
+* https://github.com/avatars
 * https://github.com/assets
 * https://github.com/bookmarks
 * https://github.com/checks
