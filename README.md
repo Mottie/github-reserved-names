@@ -13,7 +13,8 @@ The list in this repository was gathered from several sources:
 * [GitHub Hovercard](https://github.com/Justineo/github-hovercard/) ([ref](https://github.com/Justineo/github-hovercard/blob/master/src/hovercard.js#L35-L42)).
 * [GitHub Custom Hotkeys Userscript](https://github.com/Mottie/GitHub-userscripts/wiki/GitHub-custom-hotkeys) ([ref](https://github.com/Mottie/GitHub-userscripts/blob/master/github-custom-hotkeys.user.js#L58-L90)).
 * [shorten-repo-url](https://github.com/bfred-it/shorten-repo-url) ([ref](https://github.com/bfred-it/shorten-repo-url/blob/master/index.js#L9)).
-* And manually entering names into https://github.com/account/organizations/new and seeing it labeled as "Reserved".
+* Manually entering names into https://github.com/account/organizations/new and seeing it labeled as "Reserved".
+* And a lot of hard work by [@strafe](https://github.com/strafe). Thanks!
 
 See the [history page](./history.md) for more details and how you can help expand this list.
 
