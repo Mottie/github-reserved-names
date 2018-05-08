@@ -1,5 +1,5 @@
 import test from "ava";
-import r from "./";
+import r from ".";
 
 test(t => {
 	t.true(r.all.length > 0);

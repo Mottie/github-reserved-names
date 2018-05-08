@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 const meow = require("meow");
-const reservedNames = require("./");
+const reservedNames = require(".");
 
 const cli = meow(`
 Examples
