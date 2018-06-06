@@ -20,7 +20,9 @@ See the [history page](./history.md) for more details and how you can help expan
 
 ## Oddballs
 
-There are a few names that have been added or omitted because of their behavior, these are listed in the [oddballs](./oddballs.md) file.
+There are a few names that have been added or omitted because of their behavior, these are listed in the [oddballs](./oddballs.md) read me.
+
+In version 1.1.0, an `oddballs.json` has been included along with an API function & command-line interface (CLI). The data returned by the oddballs function is described in the [oddballs](./oddballs.md#oddballs-object-keys) read me.
 
 ## Install
 
@@ -29,6 +31,8 @@ $ npm install --save github-reserved-names
 ```
 
 ## Usage
+
+Pass a `name` (e.g. `settings` from `https://github.com/settings`) parameter to the `check` or `oddballs` function.
 
 ```js
 const isReserved = require('github-reserved-names');
@@ -41,23 +45,35 @@ isReserved.check("google");
 
 isReserved.all;
 // [ 400, 401, 402, ..., "www8", "www9" ]
+
+isReserved.oddballs("avatars");
+// { reserved: true, taken: true, typical: true, included: false }
+
+isReserved.oddballs();
+// [ "account", "apps", ..., "wiki", "windows" ]
 ```
 
 *NOTE* Also make sure to check that the username doesn't include invalid alphanumeric characters; such is the case for the url of a [private feed](./oddballs.md#private-feed).
 
 ## API
 
-### .all
+### `.all`
 
 Type: `array`
 
 Current list of gathered GitHub reserved names.
 
-### .check()
+### `.check(name)`
 
 Type: `function`
 
-Returns a boolean of `true` if the name is in the reserved list, `false` if not.
+Returns a boolean of `true` if the `name` parameter is in the reserved list, `false` if not.
+
+### `.oddballs(name)`
+
+Type: `function`
+
+If `name` is in the list, this function returns data related to the named oddball; otherwise it returns an array of oddballs pages.
 
 ## CLI
 
@@ -77,8 +93,17 @@ $ github-reserved --help
     401
     ...
 
+    $ github-reserved readme --oddballs
+    { reserved: true, taken: true, typical: true, included: false }
+
+    $ github-reserved --oddballs
+    account
+    apps
+    ...
+
   Options
-    --all   Show all reserved names
+    --all      Return all reserved names
+    --oddballs Return oddballs list or data
 ```
 
 ## License

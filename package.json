@@ -1,6 +1,6 @@
 {
   "name": "github-reserved-names",
-  "version": "1.0.14",
+  "version": "1.1.0",
   "description": "Get a list, or check if a user or organization name is reserved by GitHub",
   "license": "MIT",
   "repository": "Mottie/github-reserved-names",
@@ -20,7 +20,8 @@
   "files": [
     "index.js",
     "cli.js",
-    "reserved-names.json"
+    "reserved-names.json",
+    "oddballs.json"
   ],
   "keywords": [
     "github",
@@ -35,7 +36,8 @@
       "quotes": [
         "error",
         "double"
-      ]
+      ],
+      "quote-props": 0
     }
   },
   "dependencies": {

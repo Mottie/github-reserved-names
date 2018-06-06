@@ -1,3 +1,54 @@
+## Table of contents
+
+* [Oddballs function](#oddballs-function)
+  * [Oddballs list](#oddballs-list)
+  * [Oddballs object keys](#oddballs-object-keys)
+* [Existing reserved names](#existing-reserved-names)
+* [Reserved but page redirects](#reserved-but-page-redirects)
+* [Reserved, but page is atypical](#reserved-but-page-is-atypical)
+* [Not reserved, but page is atypical](#not-reserved-but-page-is-atypical)
+* [Misc](#misc)
+* [Private Feed](#private-feed)
+
+## Oddballs function
+
+This function is called from the API or CLI.
+
+Pass a `name` parameter (e.g. `settings` from `https://github.com/settings`) to get an oddballs object key, if it exists.
+
+### Oddballs list
+
+An array of oddball sites is returned when the function is called:
+  * without a named page.
+  * with a named page, but the named page doesn't exist within the list.
+
+This list *will* have some duplicates from the `reserved-names.json` list.
+
+## Oddballs object keys
+
+When the function is called with an existing named page, an object is returned containing the following keys:
+
+* `reserved` (required) - Boolean reporting if the oddball name is reported as reserved on the [new organization page](https://github.com/organizations/new).
+* `taken` (required) - Boolean reporting if the oddball name is reported as taken on the [new organization page](https://github.com/organizations/new).
+* `typical` (required) - Boolean indicating that the oddball page appears as a typical user or organization page.
+* `included` (required) - Boolean reporting if the oddball name has been included in the reserved names list.
+* `redirect` (optional) - String containing a url of the page where the user will be redirected, if it happens.
+* `notes` (optional) - String containing any special notes (see "suspended").
+
+Example:
+
+```js
+require('github-reserved-names').oddballs("account");
+/* => {
+  "reserved": true, // is reserved
+  "taken": false,   // not reported as taken
+  "typical": false, // not a typical page
+  "redirect": "https://github.com/settings/profile",
+  "included": true  // is included in the github-reserved-names list
+}
+*/
+```
+
 ## Existing reserved names
 
 These names are labeled as both *reserved and existing* (by the [new organization page](https://github.com/organizations/new)).
@@ -69,7 +120,7 @@ These names *have been* included in the `reserved-names.json` file.
 
 This entry **is not** labeled as a *reserved* name, but it has been listed in the `reserved-names.json` file because it does not appear as a typical user/organization page.
 
-* https://github.com/watching (page redirects)
+* https://github.com/watching
 * https://github.com/save-net-neutrality (atypical layout)
 
 ## Misc
@@ -82,6 +133,6 @@ It is shown here because it is unique, and alive?!
 
 ## Private Feed
 
-Clicking on the "subscript to your news feed" at the bottom of the main https://github.com page takes you to news feed page with a url similar to this: `https://github.com/{user}.private.atom?token=Base_16_encoded_value==`.
+Clicking on the "Subscribe to your news feed" at the bottom of the main https://github.com page takes you to news feed page with a url similar to this: `https://github.com/{user}.private.atom?token=Base_16_encoded_value==`.
 
 This list doesn't account for these pages as the "Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen".
