@@ -1,5 +1,6 @@
 ## Table of contents
 
+* [What is an oddball?](#what-is-an-oddball)
 * [Oddballs function](#oddballs-function)
   * [Oddballs list](#oddballs-list)
   * [Oddballs object keys](#oddballs-object-keys)
@@ -10,9 +11,15 @@
 * [Misc](#misc)
 * [Private Feed](#private-feed)
 
+## What is an oddball?
+
+Let's first define a typical reserved page. Typical pages **do not** appear as a user or organization page. There are no repositories, people, teams or projects listed. For example, the `https://github.com/search` page contains a single input and search button.
+
+This list of oddball names are pages that *do appear* as a typical user/organization page, they don't exist because of a redirect, they show an error page, or they are *not* listed as reserved *and* the page does not appear as a typical user/organization page.
+
 ## Oddballs function
 
-This function is called from the API or CLI.
+This function is called from the API (`require("github-reserved-names").oddballs();`) or CLI (`github-reserved --oddballs`).
 
 Pass a `name` parameter (e.g. `settings` from `https://github.com/settings`) to get an oddballs object key, if it exists.
 
@@ -23,6 +30,19 @@ An array of oddball sites is returned when the function is called:
   * with a named page, but the named page doesn't exist within the list.
 
 This list *will* have some duplicates from the `reserved-names.json` list.
+
+Example:
+
+```js
+require("github-reserved-names").oddballs();
+/* => [
+  "account",
+  "apps",
+  ...
+  "windows"
+]
+*/
+```
 
 ## Oddballs object keys
 
@@ -38,7 +58,7 @@ When the function is called with an existing named page, an object is returned c
 Example:
 
 ```js
-require('github-reserved-names').oddballs("account");
+require("github-reserved-names").oddballs("account");
 /* => {
   "reserved": true, // is reserved
   "taken": false,   // not reported as taken

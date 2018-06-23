@@ -5,6 +5,8 @@
 
 > Get a list, or check if a user or organization name is reserved by GitHub
 
+The list comprises user or organization names that GitHub reserves for special use, e.g. the `new` in `https://github.com/new` is a reserved name and is contained in this list.
+
 This is *by no means a complete list* of reserved GitHub user/organization names.
 
 The list in this repository was gathered from several sources:
@@ -53,7 +55,7 @@ isReserved.oddballs();
 // [ "account", "apps", ..., "wiki", "windows" ]
 ```
 
-*NOTE* Also make sure to check that the username doesn't include invalid alphanumeric characters; such is the case for the url of a [private feed](./oddballs.md#private-feed).
+*NOTE*: Also make sure to check that the username doesn't include invalid alphanumeric characters; such is the case for the url of a [private feed](./oddballs.md#private-feed).
 
 ## API
 
@@ -105,6 +107,8 @@ $ github-reserved --help
     --all      Return all reserved names
     --oddballs Return oddballs list or data
 ```
+
+**NOTE**: The `--oddballs` flag *must* be set after the name (e.g. `github-reserved {name} --oddballs`) or a full list of oddballs will be returned.
 
 ## License
 
