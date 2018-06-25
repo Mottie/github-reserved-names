@@ -132,8 +132,9 @@ These names *have been* included in the `reserved-names.json` file.
 
 ## Reserved, but page is atypical
 
-* https://github.com/suggestions - Page returns 406 if logged in, 404 otherwise. This username only shows as reserved.
+* https://github.com/hovercards - Page shows a 406 error.
 * https://github.com/inbox - Page always returns 410. This username shows as taken and reserved.
+* https://github.com/suggestions - Page returns 406 if logged in, 404 otherwise. This username only shows as reserved.
 * https://github.com/suspended - Page behaviour depends on whether you're logged in or if your account is actually suspended. This username shows as taken and reserved.
 
 ## Not reserved, but page is atypical
