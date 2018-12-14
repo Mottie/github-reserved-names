@@ -145,6 +145,12 @@ This entry **is not** labeled as a *reserved* name, but it has been listed in th
 * https://github.com/watching
 * https://github.com/save-net-neutrality (atypical layout)
 
+## Not reserved, but page is typical
+
+This entry **is not** labeled as a *reserved* name, but it has been listed in the `reserved-names.json` file because of special circumstances.
+
+* https://github.com/ghost - Catch all user page for deleted users.
+
 ## Misc
 
 This entry **is labeled** as a *reserved* name, and it *is listed* in the `reserved-names.json` file.

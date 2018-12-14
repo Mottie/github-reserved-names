@@ -55,5 +55,7 @@
 	"watching": {"reserved": false, "taken": true, "typical": false, "included": true},
 	"save-net-neutrality": {"reserved": false, "taken": true, "typical": false, "included": true},
 
+	"ghost": {"reserved": false, "taken": true, "typical": true, "included": true},
+
 	"status": {"reserved": true, "taken": false, "typical": false, "included": true}
 }
