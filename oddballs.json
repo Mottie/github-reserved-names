@@ -52,6 +52,7 @@
 	"suggestions": {"reserved": true, "taken": false, "typical": false, "included": true},
 	"suspended": {"reserved": true, "taken": true, "typical": false, "redirect": "https://github.com", "included": true, "notes": "Page behaviour depends on whether you're logged in or if your account is actually suspended"},
 
+	"case-studies": {"reserved": false, "taken": true, "typical": false, "included": true},
 	"watching": {"reserved": false, "taken": true, "typical": false, "included": true},
 	"save-net-neutrality": {"reserved": false, "taken": true, "typical": false, "included": true},
 

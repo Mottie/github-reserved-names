@@ -142,8 +142,9 @@ These names *have been* included in the `reserved-names.json` file.
 
 This entry **is not** labeled as a *reserved* name, but it has been listed in the `reserved-names.json` file because it does not appear as a typical user/organization page.
 
-* https://github.com/watching
+* https://github.com/case-studies
 * https://github.com/save-net-neutrality (atypical layout)
+* https://github.com/watching
 
 ## Not reserved, but page is typical
 
