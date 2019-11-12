@@ -7,6 +7,8 @@
 
 The list comprises user or organization names that GitHub reserves for special use, e.g. the `new` in `https://github.com/new` is a reserved name and is contained in this list.
 
+**Update 11/11/2019** Sites are now reported as being "unavailable"; we can no longer determine if a name is reserved.
+
 This is *by no means a complete list* of reserved GitHub user/organization names.
 
 The list in this repository was gathered from several sources:
@@ -15,7 +17,7 @@ The list in this repository was gathered from several sources:
 * [GitHub Hovercard](https://github.com/Justineo/github-hovercard/) ([ref](https://github.com/Justineo/github-hovercard/blob/master/src/hovercard.js#L35-L42)).
 * [GitHub Custom Hotkeys Userscript](https://github.com/Mottie/GitHub-userscripts/wiki/GitHub-custom-hotkeys) ([ref](https://github.com/Mottie/GitHub-userscripts/blob/master/github-custom-hotkeys.user.js#L58-L90)).
 * [shorten-repo-url](https://github.com/bfred-it/shorten-repo-url) ([ref](https://github.com/bfred-it/shorten-repo-url/blob/master/index.js#L9)).
-* Manually entering names into https://github.com/account/organizations/new and seeing it labeled as "Reserved".
+* Manually entering names into https://github.com/account/organizations/new and seeing it labeled as "Reserved". **Update** Sites are now reported as "unavailable".
 * And a lot of hard work by [@strafe](https://github.com/strafe). Thanks!
 
 See the [history page](./history.md) for more details and how you can help expand this list.
