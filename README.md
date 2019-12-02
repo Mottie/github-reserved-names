@@ -7,7 +7,7 @@
 
 The list comprises user or organization names that GitHub reserves for special use, e.g. the `new` in `https://github.com/new` is a reserved name and is contained in this list.
 
-**Update 11/11/2019** Sites are now reported as being "unavailable"; we can no longer determine if a name is reserved.
+**Update 11/11/2019** Sites are now reported as being "unavailable" or "taken"; we can no longer determine if a name is reserved. All new additions will be included in the reserved list and marked as reserved.
 
 This is *by no means a complete list* of reserved GitHub user/organization names.
 

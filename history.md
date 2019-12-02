@@ -6,6 +6,8 @@ More reserved names were encountered when GitHub introduced the marketplace. And
 
 I tried to build a few automated scripts to create this list, but it has been wrought with many difficulties...
 
+Update: Somewhere around November 2019, sites are no longer being reported as reserved only as being "unavailable" or "taken". I will start marking all sites as reserved and including them in the list, just-in-case.
+
 ### Reserved Names
 
 I was prepared to use [this list of reserved usernames](https://github.com/shouldbee/reserved-usernames/) as a source.
