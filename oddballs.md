@@ -135,6 +135,7 @@ These names *have been* included in the `reserved-names.json` file.
 * https://github.com/collections - Curated lists of GitHub repos.
 * https://github.com/hovercards - Page shows a 406 error.
 * https://github.com/inbox - Page always returns 410. This username shows as taken and reserved.
+* https://github.com/invalid-email-address - Page shows a 404 error. This username shows as taken. Reserved status is unknown, but marked as true.
 * https://github.com/suggestions - Page returns 406 if logged in, 404 otherwise. This username only shows as reserved.
 * https://github.com/suspended - Page behaviour depends on whether you're logged in or if your account is actually suspended. This username shows as taken and reserved.
 
