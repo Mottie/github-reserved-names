@@ -19,10 +19,12 @@
   },
   "files": [
     "index.js",
+    "index.d.ts",
     "cli.js",
     "reserved-names.json",
     "oddballs.json"
   ],
+  "types": "./index.d.ts",
   "keywords": [
     "github",
     "reserved",
