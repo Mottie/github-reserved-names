@@ -16,7 +16,7 @@ The list in this repository was gathered from several sources:
 * [Octotree](https://github.com/buunguyen/octotree/) ([ref](https://github.com/buunguyen/octotree/blob/master/src/adapters/github.js#L1-L12)).
 * [GitHub Hovercard](https://github.com/Justineo/github-hovercard/) ([ref](https://github.com/Justineo/github-hovercard/blob/master/src/hovercard.js#L35-L42)).
 * [GitHub Custom Hotkeys Userscript](https://github.com/Mottie/GitHub-userscripts/wiki/GitHub-custom-hotkeys) ([ref](https://github.com/Mottie/GitHub-userscripts/blob/master/github-custom-hotkeys.user.js#L58-L90)).
-* [shorten-repo-url](https://github.com/bfred-it/shorten-repo-url) ([ref](https://github.com/bfred-it/shorten-repo-url/blob/master/index.js#L9)).
+* [shorten-repo-url](https://github.com/fregante/shorten-repo-url) ([ref](https://github.com/fregante/shorten-repo-url/blob/master/index.js#L9)).
 * Manually entering names into https://github.com/account/organizations/new and seeing it labeled as "Reserved". **Update** Sites are now reported as "unavailable".
 * And a lot of hard work by [@strafe](https://github.com/strafe). Thanks!
 
@@ -111,6 +111,10 @@ $ github-reserved --help
 ```
 
 **NOTE**: The `--oddballs` flag *must* be set after the name (e.g. `github-reserved {name} --oddballs`) or a full list of oddballs will be returned.
+
+## Related
+
+- [github-url-detection](https://github.com/fregante/github-url-detection) - Check what type of GitHub page you’re on (includes `github-reserved-names`).
 
 ## License
 
