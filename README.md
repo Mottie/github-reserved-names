@@ -112,6 +112,10 @@ $ github-reserved --help
 
 **NOTE**: The `--oddballs` flag *must* be set after the name (e.g. `github-reserved {name} --oddballs`) or a full list of oddballs will be returned.
 
+## Related
+
+- [github-url-detection](https://github.com/fregante/github-url-detection) - Check what type of GitHub page you’re on.
+
 ## License
 
 MIT
