@@ -114,7 +114,7 @@ $ github-reserved --help
 
 ## Related
 
-- [github-url-detection](https://github.com/fregante/github-url-detection) - Check what type of GitHub page you’re on.
+- [github-url-detection](https://github.com/fregante/github-url-detection) - Check what type of GitHub page you’re on (includes `github-reserved-names`).
 
 ## License
 
