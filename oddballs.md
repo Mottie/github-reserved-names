@@ -102,7 +102,8 @@ These names *have been* included in the `reserved-names.json` file.
 | https://github.com/account | https://github.com/settings/profile |
 | https://github.com/apps | https://github.com/marketplace |
 | https://github.com/blog | https://blog.github.com/ |
-| https://github.com/c | https://github.com/contact |
+| https://github.com/c | https://support.github.com/ |
+| https://github.com/contact | https://support.github.com/ |
 | https://github.com/contributing | https://github.com/about/careers |
 | https://github.com/customer | https://github.com/business/customers |
 | https://github.com/customers | https://github.com/business/customers |

@@ -19,6 +19,7 @@
 	"apps": {"reserved": true, "taken": false, "typical": false, "redirect": "https://github.com/marketplace", "included": true},
 	"blog": {"reserved": true, "taken": false, "typical": false, "redirect": "https://blog.github.com", "included": true},
 	"c": {"reserved": true, "taken": false, "typical": false, "redirect": "https://support.github.com/", "included": true},
+	"contact": {"reserved": true, "taken": false, "typical": false, "redirect": "https://support.github.com/", "included": true},
 	"contributing": {"reserved": true, "taken": false, "typical": false, "redirect": "https://github.com/about/careers", "included": true},
 	"customer": {"reserved": true, "taken": false, "typical": false, "redirect": "https://github.com/business/customers", "included": true},
 	"customers": {"reserved": true, "taken": false, "typical": false, "redirect": "https://github.com/business/customers", "included": true},
