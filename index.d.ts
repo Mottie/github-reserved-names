@@ -10,7 +10,11 @@ interface oddball {
   redirect?: string
 }
 
-export const all: string[]
-export function check(name: string): boolean
-export function oddballs(): string[]
-export function oddballs(name: string): oddball | string[]
+declare const reservedNames: {
+  all: string[]
+  check(name: string): boolean
+  oddballs(): string[]
+  oddballs(name: string): oddball | string[]
+}
+
+export = reservedNames
