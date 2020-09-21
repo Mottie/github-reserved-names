@@ -81,36 +81,7 @@ If `name` is in the list, this function returns data related to the named oddbal
 
 ## CLI
 
-```bash
-$ npm install --global github-reserved-names
-```
-
-```bash
-$ github-reserved --help
-
-  Examples
-    $ github-reserved issues
-    true
-
-    $ github-reserved --all
-    400
-    401
-    ...
-
-    $ github-reserved readme --oddballs
-    { reserved: true, taken: true, typical: true, included: false }
-
-    $ github-reserved --oddballs
-    account
-    apps
-    ...
-
-  Options
-    --all      Return all reserved names
-    --oddballs Return oddballs list or data
-```
-
-**NOTE**: The `--oddballs` flag *must* be set after the name (e.g. `github-reserved {name} --oddballs`) or a full list of oddballs will be returned.
+Removed in v2.0.0.
 
 ## Related
 

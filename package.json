@@ -8,19 +8,12 @@
     "name": "Rob Garrison",
     "email": "wowmotty@gmail.com"
   },
-  "engines": {
-    "node": ">=4"
-  },
-  "bin": {
-    "github-reserved": "cli.js"
-  },
   "scripts": {
     "test": "xo && ava"
   },
   "files": [
     "index.js",
     "index.d.ts",
-    "cli.js",
     "reserved-names.json",
     "oddballs.json"
   ],
@@ -41,9 +34,6 @@
       ],
       "quote-props": 0
     }
-  },
-  "dependencies": {
-    "meow": "^5.0.0"
   },
   "devDependencies": {
     "ava": "^2.4.0",
