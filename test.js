@@ -35,11 +35,11 @@ test("Check oddballs return value", t => {
 	// Oddballs function returns an array
 	t.true(r.oddballs().length > 0);
 	// Passing in a name returns the oddball data
-	t.deepEqual(r.oddballs("readme"), {
+	t.deepEqual(r.oddballs("apps"), {
 		reserved: true,
-		taken: true,
+		taken: false,
 		typical: false,
-		redirect: "https://github.com/about",
+		redirect: "https://github.com/marketplace",
 		included: true
 	});
 });
