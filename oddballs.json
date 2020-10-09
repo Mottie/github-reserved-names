@@ -33,7 +33,7 @@
 	"pages": {"reserved": true, "taken": false, "typical": false, "redirect": "https://pages.github.com", "included": true},
 	"plans": {"reserved": true, "taken": false, "typical": false, "redirect": "https://github.com/pricing", "included": true},
 	"press": {"reserved": true, "taken": false, "typical": false, "redirect": "https://github.com/about/press", "included": true},
-	"readme": {"reserved": true, "taken": true, "typical": false, "redirect": "https://github.com/about", "included": true},
+	"readme": {"reserved": true, "taken": false, "typical": false, "included": true},
 	"repositories": {"reserved": true, "taken": false, "typical": false, "redirect": "https://github.com/trending", "included": true},
 	"resources": {"reserved": true, "taken": false, "typical": false, "redirect": "https://resources.github.com", "included": true},
 	"security": {"reserved": true, "taken": false, "typical": false, "redirect": "https://help.github.com/articles/github-security/", "included": true},
