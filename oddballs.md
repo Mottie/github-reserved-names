@@ -117,7 +117,6 @@ These names *have been* included in the `reserved-names.json` file.
 | https://github.com/pages | https://pages.github.com/ |
 | https://github.com/plans | https://github.com/pricing |
 | https://github.com/press | https://github.com/about/press |
-| https://github.com/readme | https://github.com/about |
 | https://github.com/repositories | https://github.com/trending |
 | https://github.com/resources | https://resources.github.com/ |
 | https://github.com/security | https://help.github.com/articles/github-security/ |
@@ -130,6 +129,7 @@ These names *have been* included in the `reserved-names.json` file.
 | https://github.com/users | https://github.com/ |
 | https://github.com/wiki | https://github.com/ |
 | https://github.com/windows | https://desktop.github.com/ |
+| ~https://github.com/readme~ | ~https://github.com/about~ (modified ~10/2020) |
 
 ## Reserved, but page is atypical
 
