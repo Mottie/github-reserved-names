@@ -32,11 +32,13 @@
         "error",
         "double"
       ],
-      "quote-props": 0
+      "quote-props": 0,
+      "unicorn/no-reduce": 0,
+      "@typescript-eslint/method-signature-style": 0
     }
   },
   "devDependencies": {
-    "ava": "^2.4.0",
-    "xo": "^0.25.3"
+    "ava": "^3.13.0",
+    "xo": "^0.33.1"
   }
 }

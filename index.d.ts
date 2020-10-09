@@ -3,18 +3,18 @@
 // Definitions by: Kid <https://github.com/kidonng>
 
 interface oddball {
-  reserved: boolean
-  taken: boolean
-  typical: boolean
-  included: boolean
-  redirect?: string
+	reserved: boolean;
+	taken: boolean;
+	typical: boolean;
+	included: boolean;
+	redirect?: string;
 }
 
 declare const reservedNames: {
-  all: string[]
-  check(name: string): boolean
-  oddballs(): string[]
-  oddballs(name: string): oddball | string[]
-}
+	all: string[];
+	check(name: string): boolean;
+	oddballs(): string[];
+	oddballs(name: string): oddball | string[];
+};
 
-export = reservedNames
+export = reservedNames;

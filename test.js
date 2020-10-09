@@ -1,5 +1,5 @@
-import test from "ava";
-import r from ".";
+const test = require("ava");
+const r = require(".");
 
 const oddballs = require("./oddballs.json");
 
