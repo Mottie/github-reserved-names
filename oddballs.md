@@ -133,6 +133,7 @@ These names *have been* included in the `reserved-names.json` file.
 
 ## Reserved, but page is atypical
 
+* https://github.com/advisories - GitHub Advisory Database
 * https://github.com/collections - Curated lists of GitHub repos.
 * https://github.com/hovercards - Page shows a 406 error.
 * https://github.com/inbox - Page always returns 410. This username shows as taken and reserved.
