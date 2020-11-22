@@ -19,7 +19,7 @@ This list of oddball names are pages that *do appear* as a typical user/organiza
 
 ## Oddballs function
 
-This function is called from the API (`require("github-reserved-names").oddballs();`) or CLI (`github-reserved --oddballs`).
+This function is called from the API (`require("github-reserved-names").oddballs();`).
 
 Pass a `name` parameter (e.g. `settings` from `https://github.com/settings`) to get an oddballs object key, if it exists.
 

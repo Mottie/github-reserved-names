@@ -3,7 +3,7 @@ const r = require(".");
 
 const oddballs = require("./oddballs.json");
 
-test("Check reserved-names cli", t => {
+test("Check reserved-names checker", t => {
 	t.true(r.all.length > 0);
 	t.true(r.check("settings"));
 	t.true(r.check("Issues"));

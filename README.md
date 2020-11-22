@@ -26,7 +26,7 @@ See the [history page](./history.md) for more details and how you can help expan
 
 There are a few names that have been added or omitted because of their behavior, these are listed in the [oddballs](./oddballs.md) read me.
 
-In version 1.1.0, an `oddballs.json` has been included along with an API function & command-line interface (CLI). The data returned by the oddballs function is described in the [oddballs](./oddballs.md#oddballs-object-keys) read me.
+In version 1.1.0, an `oddballs.json` has been included along with an API function & command-line interface (CLI; removed in v2.0.0). The data returned by the oddballs function is described in the [oddballs](./oddballs.md#oddballs-object-keys) read me.
 
 ## Install
 

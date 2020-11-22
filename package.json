@@ -23,7 +23,6 @@
     "reserved",
     "username",
     "organization",
-    "cli"
   ],
   "xo": {
     "space": false,
