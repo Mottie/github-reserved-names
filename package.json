@@ -24,9 +24,6 @@
     "username",
     "organization"
   ],
-  "engines": {
-    "node": ">=14"
-  },
   "xo": {
     "space": false,
     "rules": {
