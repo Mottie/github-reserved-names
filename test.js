@@ -20,7 +20,7 @@ test("Check oddball properties", t => {
 		reserved: true, taken: true, typical: true, included: true,
 	};
 
-	for (const key of oddballs) {
+	for (const key of Object.keys(oddballs)) {
 		const entry = oddballs[key];
 		has.reserved = has.reserved ? "reserved" in entry : false;
 		has.taken = has.taken ? "taken" in entry : false;
