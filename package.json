@@ -27,17 +27,15 @@
   "xo": {
     "space": false,
     "rules": {
+      "unicorn/prefer-module": 0,
       "quotes": [
         "error",
         "double"
-      ],
-      "quote-props": 0,
-      "unicorn/no-reduce": 0,
-      "@typescript-eslint/method-signature-style": 0
+      ]
     }
   },
   "devDependencies": {
-    "ava": "^3.13.0",
-    "xo": "^0.33.1"
+    "ava": "^6.1.3",
+    "xo": "^0.59.3"
   }
 }

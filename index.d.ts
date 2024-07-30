@@ -2,6 +2,7 @@
 // Project: https://github.com/Mottie/github-reserved-names
 // Definitions by: Kid <https://github.com/kidonng>
 
+// eslint-disable-next-line @typescript-eslint/naming-convention, @typescript-eslint/consistent-type-definitions -- TODO: In the next major release
 interface oddball {
 	reserved: boolean;
 	taken: boolean;
