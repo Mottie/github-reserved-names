@@ -1,7 +1,6 @@
 const test = require("ava");
-const r = require(".");
-
 const oddballs = require("./oddballs.json");
+const r = require("./index.js");
 
 test("Check reserved-names checker", t => {
 	t.true(r.all.length > 0);
@@ -17,14 +16,16 @@ test("Check reserved-names checker", t => {
 
 test("Check oddball properties", t => {
 	// Every oddballs entry must include reserved, taken, typical & included keys
-	const has = Object.keys(oddballs).reduce((acc, key) => {
-		const entry = oddballs[key];
-		acc.reserved = acc.reserved ? "reserved" in entry : false;
-		acc.taken = acc.taken ? "taken" in entry : false;
-		acc.typical = acc.typical ? "typical" in entry : false;
-		acc.included = acc.included ? "included" in entry : false;
-		return acc;
-	}, {reserved: true, taken: true, typical: true, included: true});
+	const has = {
+		reserved: true, taken: true, typical: true, included: true,
+	};
+	for (const entry of Object.values(oddballs)) {
+		has.reserved = has.reserved ? "reserved" in entry : false;
+		has.taken = has.taken ? "taken" in entry : false;
+		has.typical = has.typical ? "typical" in entry : false;
+		has.included = has.included ? "included" in entry : false;
+	}
+
 	t.true(has.reserved);
 	t.true(has.taken);
 	t.true(has.typical);
@@ -40,6 +41,6 @@ test("Check oddballs return value", t => {
 		taken: false,
 		typical: false,
 		redirect: "https://github.com/marketplace",
-		included: true
+		included: true,
 	});
 });

@@ -1,6 +1,7 @@
 env: {}
 
-# DO NOT EDIT BELOW, USE: npx ghat fregante/ghatemplates/npm-publish
+# FILE GENERATED WITH: npx ghat fregante/ghatemplates/npm-publish
+# SOURCE: https://github.com/fregante/ghatemplates
 
 # Collaborators can publish a new version of what's on master via "workflow_dispatch"
 # https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
@@ -18,21 +19,21 @@ jobs:
   NPM:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          fetch-depth: 20
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: https://registry.npmjs.org
       - run: npm ci || npm install
-      - uses: fregante/setup-git-user@v1
-      - run: npm version ${{ github.event.inputs.Version }}
+      - uses: fregante/setup-git-user@v2
+      - name: Create version
+        # Get the generated version, this enables support for keywords: `npm version patch`
+        run: |
+          VERSION="$(npm version "${{ github.event.inputs.Version }}")"
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: git push --follow-tags
-      - uses: notlmn/release-with-changelog@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          exclude: true
+      - run: gh release create "$VERSION" --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}
