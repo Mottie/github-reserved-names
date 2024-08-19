@@ -16,7 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: jq sort reserved-names.json | sponge reserved-names.json
+      - run: jq sort reserved-names.json > sort && mv sort reserved-names.json
+        name: Sort reserved-names.json
       - run: git diff --exit-code
   Test:
     runs-on: ubuntu-latest
