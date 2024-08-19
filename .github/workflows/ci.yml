@@ -21,9 +21,13 @@ jobs:
       - name: Sort reserved-names.json
         run: jq sort reserved-names.json > sort && mv sort reserved-names.json
       - name: Commit sorted file if necessary
+        if: github.event_name == 'push' && github.ref != 'refs/heads/main' # Exclude PRs, no push access
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Sort reserved-names.json
+      - name: Validate sorting
+        if: github.event_name == 'pull_request' # Only on external PRs
+        run: git diff --exit-code
         
   Test:
     runs-on: ubuntu-latest
