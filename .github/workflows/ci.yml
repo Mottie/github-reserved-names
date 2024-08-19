@@ -14,11 +14,17 @@ jobs:
         run: npx xo
   Sort:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
-      - run: jq sort reserved-names.json > sort && mv sort reserved-names.json
-        name: Sort reserved-names.json
-      - run: git diff --exit-code
+      - name: Sort reserved-names.json
+        run: jq sort reserved-names.json > sort && mv sort reserved-names.json
+      - name: Commit sorted file if necessary
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Sort reserved-names.json
+        
   Test:
     runs-on: ubuntu-latest
     steps:
