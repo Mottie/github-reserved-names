@@ -1,9 +1,3 @@
-env: {}
-
-# FILE GENERATED WITH: npx ghat fregante/ghatemplates/node
-# SOURCE: https://github.com/fregante/ghatemplates
-# OPTIONS: {"exclude":["jobs.Build"]}
-
 name: CI
 on:
   - pull_request
@@ -18,6 +12,12 @@ jobs:
         run: npm ci || npm install
       - name: XO
         run: npx xo
+  Sort:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: jq sort reserved-names.json | sponge reserved-names.json
+      - run: git diff --exit-code
   Test:
     runs-on: ubuntu-latest
     steps:
