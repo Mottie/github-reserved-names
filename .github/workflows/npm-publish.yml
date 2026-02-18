@@ -33,7 +33,7 @@ jobs:
         run: |
           VERSION="$(npm version "${{ github.event.inputs.Version }}")"
           echo "VERSION=$VERSION" >> $GITHUB_ENV
-      - run: npm publish
+      - run: npm publish --provenance
       - run: git push --follow-tags
       - run: gh release create "$VERSION" --generate-notes
         env:
