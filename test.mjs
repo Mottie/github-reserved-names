@@ -35,6 +35,37 @@ test("Check oddball properties", t => {
 	t.true(has.included);
 });
 
+// GitHub user and organization profile pages include `og:type" content="profile"`
+// in their HTML. Reserved-name pages (e.g. /settings, /explore) do not.
+const isGitHubProfile = async name => {
+	const response = await fetch(`https://github.com/${name}`);
+	if (response.status === 429 || response.status >= 500) {
+		throw new Error(`Unexpected HTTP ${response.status} for github.com/${name}`);
+	}
+
+	const text = await response.text();
+	return text.includes("content=\"profile\"");
+};
+
+const delay = ms => new Promise(resolve => {
+	setTimeout(resolve, ms);
+});
+
+const checkProfile = test.macro(async (t, name, expected) => {
+	t.is(await isGitHubProfile(name), Boolean(expected));
+	await delay(200);
+});
+
+// Sanity check: @Mottie is a real user profile
+test("HTTP check > @Mottie: user", checkProfile, "Mottie", true);
+
+for (const name of r.all) {
+	test(`HTTP check > @${name}: profile check`, checkProfile, name, r.oddballs(name)?.typical);
+}
+
+// Sanity check: @refined-github is a real organization profile
+test("HTTP check > @refined-github: organization", checkProfile, "refined-github", true);
+
 test("Check oddballs return value", t => {
 	// Oddballs function returns an array
 	t.true(r.oddballs().length > 0);

@@ -34,6 +34,10 @@
       "import-x/order": 0
     }
   },
+  "ava": {
+    "serial": true,
+    "timeout": "120s"
+  },
   "devDependencies": {
     "ava": "^8.0.0",
     "xo": "^2.0.2"

@@ -51,7 +51,7 @@
 	"collections": {"reserved": true, "taken": false, "typical": false, "included": true, "notes": "Curated lists of GitHub repos"},
 	"dashboard-feed": {"reserved": true, "taken": true, "typical": false, "included": true, "notes": "GitHub dashboard feed"},
 	"hovercards": {"reserved": true, "taken": false, "typical": false, "included": true, "notes": "HTTP ERROR 406"},
-	"inbox": {"reserved": true, "taken": true, "typical": false, "redirect": "https://github.com/410", "included": true, "notes": "410 ERROR"},
+	"inbox": {"reserved": true, "taken": true, "typical": true, "included": true},
 	"invalid-email-address": {"reserved": true, "taken": true, "typical": false, "included": true, "notes": "HTTP ERROR 404"},
 	"suggestions": {"reserved": true, "taken": false, "typical": false, "included": true},
 	"suspended": {"reserved": true, "taken": true, "typical": false, "redirect": "https://github.com", "included": true, "notes": "Page behaviour depends on whether you're logged in or if your account is actually suspended"},
