@@ -10,10 +10,8 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 24
-      - name: install
-        run: npm ci || npm install
-      - name: XO
-        run: npx xo
+      - run: npm install
+      - run: npx xo
   Sort:
     runs-on: ubuntu-latest
     permissions:
@@ -28,7 +26,7 @@ jobs:
         with:
           commit_message: Sort reserved-names.json
       - name: Validate sorting
-        if: github.event_name == 'pull_request' # Only on external PRs
+        if: github.event_name == 'pull_request' # Only on PRs
         run: git diff --exit-code
         
   Test:
@@ -38,9 +36,5 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 24
-      - name: install
-        run: npm ci || npm install
-      - name: build
-        run: npm run build --if-present
-      - name: AVA
-        run: npx ava
+      - run: npm install
+      - run: npx ava
