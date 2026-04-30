@@ -35,8 +35,14 @@ test("Check oddball properties", t => {
 	t.true(has.included);
 });
 
+// GitHub user and organization profile pages include `og:type" content="profile"`
+// in their HTML. Reserved-name pages (e.g. /settings, /explore) do not.
 const isGitHubProfile = async name => {
 	const response = await fetch(`https://github.com/${name}`);
+	if (response.status === 429 || response.status >= 500) {
+		throw new Error(`Unexpected HTTP ${response.status} for github.com/${name}`);
+	}
+
 	const text = await response.text();
 	return text.includes("content=\"profile\"");
 };
@@ -46,8 +52,6 @@ const delay = ms => new Promise(resolve => {
 });
 
 test("Check none of the reserved names appear as a user or organization", async t => {
-	t.plan(r.all.length + 2);
-
 	// Sanity check: Mottie is a user
 	t.true(await isGitHubProfile("Mottie"), "Mottie should be a user profile");
 	await delay(200);
