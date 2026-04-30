@@ -35,6 +35,7 @@
     }
   },
   "ava": {
+    "serial": true,
     "timeout": "120s"
   },
   "devDependencies": {

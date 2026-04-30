@@ -51,29 +51,30 @@ const delay = ms => new Promise(resolve => {
 	setTimeout(resolve, ms);
 });
 
-// Sanity check: @Mottie is a real user profile
-test.serial("HTTP check > @Mottie: user", async t => {
-	t.true(await isGitHubProfile("Mottie"));
+const checkIsProfile = test.macro(async (t, name) => {
+	t.true(await isGitHubProfile(name));
 	await delay(200);
 });
 
+const checkNotProfile = test.macro(async (t, name) => {
+	t.false(await isGitHubProfile(name), `@${name} appeared as a GitHub user or organization profile`);
+	await delay(200);
+});
+
+// Sanity check: @Mottie is a real user profile
+test("HTTP check > @Mottie: user", checkIsProfile, "Mottie");
+
 for (const name of r.all) {
-	// Exclude oddballs for now
-	if (r.oddballs(name)) {
+	// Exclude typical oddballs, which _should_ look like users
+	if (r.oddballs(name)?.typical) {
 		continue;
 	}
 
-	// eslint-disable-next-line no-loop-func
-	test.serial(`HTTP check > @${name}: reserved`, async t => {
-		t.false(await isGitHubProfile(name), `@${name} appeared as a GitHub user or organization profile`);
-		await delay(200);
-	});
+	test(`HTTP check > @${name}: reserved`, checkNotProfile, name);
 }
 
 // Sanity check: @refined-github is a real organization profile
-test.serial("HTTP check > @refined-github: organization", async t => {
-	t.true(await isGitHubProfile("refined-github"));
-});
+test("HTTP check > @refined-github: organization", checkIsProfile, "refined-github");
 
 test("Check oddballs return value", t => {
 	// Oddballs function returns an array
