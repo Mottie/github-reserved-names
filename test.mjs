@@ -60,11 +60,6 @@ const checkProfile = test.macro(async (t, name, expected) => {
 test("HTTP check > @Mottie: user", checkProfile, "Mottie", true);
 
 for (const name of r.all) {
-	// Exclude typical oddballs, which _should_ look like users
-	if (r.oddballs(name)?.typical) {
-		continue;
-	}
-
 	test(`HTTP check > @${name}: profile check`, checkProfile, name, r.oddballs(name)?.typical);
 }
 
