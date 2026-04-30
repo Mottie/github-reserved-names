@@ -6,8 +6,10 @@ jobs:
   Lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
       - name: install
         run: npm ci || npm install
       - name: XO
@@ -17,12 +19,12 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Sort reserved-names.json
         run: jq sort reserved-names.json > sort && mv sort reserved-names.json
       - name: Commit sorted file if necessary
         if: github.event_name == 'push' && github.ref != 'refs/heads/main' # Exclude PRs, no push access
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Sort reserved-names.json
       - name: Validate sorting
@@ -32,8 +34,10 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
       - name: install
         run: npm ci || npm install
       - name: build
