@@ -60,7 +60,7 @@
 	"watching": {"reserved": false, "taken": true, "typical": false, "included": true},
 	"save-net-neutrality": {"reserved": false, "taken": true, "typical": false, "included": true},
 
-	"ghost": {"reserved": false, "taken": true, "typical": true, "included": true},
+	"ghost": {"reserved": false, "taken": true, "typical": true, "included": false, "notes": "GitHub's placeholder account for deleted users; appears as a real profile page"},
 
 	"status": {"reserved": true, "taken": false, "typical": false, "included": true}
 }
