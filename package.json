@@ -30,7 +30,8 @@
       "@stylistic/quotes": [
         "error",
         "double"
-      ]
+      ],
+      "import-x/order": 0
     }
   },
   "devDependencies": {

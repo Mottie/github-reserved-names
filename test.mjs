@@ -1,4 +1,7 @@
-const test = require("ava");
+import {createRequire} from "node:module";
+import test from "ava";
+
+const require = createRequire(import.meta.url);
 const oddballs = require("./oddballs.json");
 const r = require("./index.js");
 
