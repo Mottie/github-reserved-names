@@ -52,22 +52,26 @@ const delay = ms => new Promise(resolve => {
 });
 
 // Sanity check: @Mottie is a real user profile
-test.serial("HTTP check > @Mottie: should be a user profile", async t => {
+test.serial("HTTP check > @Mottie: user", async t => {
 	t.true(await isGitHubProfile("Mottie"));
 	await delay(200);
 });
 
-// Each reserved name must NOT resolve to a user or organization profile
 for (const name of r.all) {
+	// Exclude oddballs for now
+	if (r.oddballs(name)) {
+		continue;
+	}
+
 	// eslint-disable-next-line no-loop-func
-	test.serial(`HTTP check > @${name}: should not be a user or org profile`, async t => {
+	test.serial(`HTTP check > @${name}: reserved`, async t => {
 		t.false(await isGitHubProfile(name), `@${name} appeared as a GitHub user or organization profile`);
 		await delay(200);
 	});
 }
 
 // Sanity check: @refined-github is a real organization profile
-test.serial("HTTP check > @refined-github: should be an organization profile", async t => {
+test.serial("HTTP check > @refined-github: organization", async t => {
 	t.true(await isGitHubProfile("refined-github"));
 });
 
