@@ -10,4 +10,4 @@ exports.check = name => {
 
 exports.oddballs = name => name && name in oddballs
 	? oddballs[name]
-	: Object.keys(oddballs).sort();
+	: Object.keys(oddballs).toSorted();
