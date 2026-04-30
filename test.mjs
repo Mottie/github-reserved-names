@@ -35,6 +35,35 @@ test("Check oddball properties", t => {
 	t.true(has.included);
 });
 
+const isGitHubProfile = async name => {
+	const response = await fetch(`https://github.com/${name}`);
+	const text = await response.text();
+	return text.includes("content=\"profile\"");
+};
+
+const delay = ms => new Promise(resolve => {
+	setTimeout(resolve, ms);
+});
+
+test("Check none of the reserved names appear as a user or organization", async t => {
+	t.plan(r.all.length + 2);
+
+	// Sanity check: Mottie is a user
+	t.true(await isGitHubProfile("Mottie"), "Mottie should be a user profile");
+	await delay(200);
+
+	// None of the reserved names should be a user or organization profile
+	for (const name of r.all) {
+		// eslint-disable-next-line no-await-in-loop
+		t.false(await isGitHubProfile(name), `${name} should not be a user or organization profile`);
+		// eslint-disable-next-line no-await-in-loop
+		await delay(200);
+	}
+
+	// Sanity check: refined-github is an organization
+	t.true(await isGitHubProfile("refined-github"), "refined-github should be an organization profile");
+});
+
 test("Check oddballs return value", t => {
 	// Oddballs function returns an array
 	t.true(r.oddballs().length > 0);
